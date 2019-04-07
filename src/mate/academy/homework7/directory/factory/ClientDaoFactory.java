@@ -14,7 +14,7 @@ public class ClientDaoFactory {
 
     public static ClientDao getClienDao(boolean isFileDao, boolean isMemoryDao) {
         try {
-            String dbName = PropertieLoader.getPropertie("db.bame");
+            String dbName = PropertieLoader.getPropertie("db.name");
             if (dbName.equals("memory") && isFileDao) {
                 return inMemoryDao;
             }

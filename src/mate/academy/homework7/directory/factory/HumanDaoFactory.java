@@ -11,10 +11,10 @@ public class HumanDaoFactory {
     private static final HumanDao fileHumanDao = new FileHumanDao();
     private static final HumanDao inMemoryHumanDao = new InMemoryHumanDao();
 
-    public static HumanDao getHumanDao(boolean isFileHumanDao, boolean isInInMemoryHumanDao) {
+    public static HumanDao getHumanDao(boolean isFileHumanDao, boolean isInMemoryHumanDao) {
         try {
             String dbHumanName = PropertieLoader.getPropertie("db.name.human");
-            if (dbHumanName.equals("memory") && isInInMemoryHumanDao) {
+            if (dbHumanName.equals("memory") && isInMemoryHumanDao) {
                 return inMemoryHumanDao;
             }
         } catch (IOException e) {
@@ -26,5 +26,4 @@ public class HumanDaoFactory {
             throw new ComponentNotFoundException();
         }
     }
-
 }

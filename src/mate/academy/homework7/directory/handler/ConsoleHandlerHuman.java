@@ -5,7 +5,6 @@ import mate.academy.homework7.directory.dao.HumanDao;
 import mate.academy.homework7.directory.model.Human;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.Scanner;
 
 public class ConsoleHandlerHuman {

@@ -5,6 +5,7 @@ import mate.academy.homework7.directory.model.Client;
 
 import java.util.ArrayList;
 import java.util.List;
+
 @Component
 public class InMemoryClientDao implements ClientDao {
 
@@ -12,7 +13,7 @@ public class InMemoryClientDao implements ClientDao {
 
     @Override
     public void save(Client client) {
-    inMemoryDirectory.add(client);
+        inMemoryDirectory.add(client);
     }
 
     @Override

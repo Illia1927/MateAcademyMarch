@@ -1,4 +1,4 @@
-package mate.academy.homework10;
+package mate.academy.homework10.ex1;
 
 public class ComplexNumber {
     private final double re;
@@ -25,8 +25,9 @@ public class ComplexNumber {
         return (this.re == number.getRe() &&
                 this.im == number.getIm());
     }
+
     @Override
-    public int hashCode(){
+    public int hashCode() {
         double result = 17;
         result = 31 * result + re;
         result = 31 * result + im;

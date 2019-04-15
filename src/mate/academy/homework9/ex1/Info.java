@@ -1,11 +1,11 @@
 package mate.academy.homework9.ex1;
 
-public class ClassForMailAndSalary<T> {
+public class Info<T> {
     private String from;
     private String to;
     private T content;
 
-    public ClassForMailAndSalary(String from, String to, T content) {
+    public Info(String from, String to, T content) {
         this.from = from;
         this.to = to;
         this.content = content;

@@ -11,8 +11,9 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Input the word : ");
         String text = getWord();
-        workWithText(text);
+        procesingWithDate(text);
     }
 
     static String getWord() {
@@ -26,7 +27,7 @@ public class Main {
         return result;
     }
 
-    static void workWithText(String text) {
+    static void procesingWithDate(String text) {
         Map<String, Integer> maps = new HashMap<>();
         Pattern pattern = Pattern.compile("\\b\\w+\\b", Pattern.UNICODE_CHARACTER_CLASS);
         Matcher matcher = pattern.matcher(text);
